@@ -1,24 +1,18 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
   padding-bottom: 20px;
-}
-
-.navbar-custom {
-  background-color: #87c0be;
 }
 
 .jumbotron {
   background-image: url(./los_angeles.jpg);
   background-position: center;
   background-size: cover;
-  background: -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
-}
-
-footer {
-  color: #767676;
 }
 
 .heading {
   text-align: center
+}
+
+footer {
+  color: #767676;
 }
