@@ -4,7 +4,6 @@ body {
 }
 
 .jumbotron {
-  background-image: url(./los_angeles.jpg);
   background-position: center;
   background-size: cover;
 }
