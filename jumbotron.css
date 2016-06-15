@@ -17,6 +17,18 @@ body {
   max-width: 10%;
 }
 
+.profile {
+  height: auto;
+  max-width: 33%;
+  float: left;
+  margin-right: 10px;
+  border-radius: 33px 11px 33px 11px;
+}
+
+.title {
+  color: #767676;
+}
+
 footer {
   color: #767676;
 }
