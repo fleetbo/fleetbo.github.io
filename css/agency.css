@@ -284,7 +284,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
     section {
-        padding: 150px 0
+        padding: 80px 0
     }
 }
 .service-heading {
@@ -724,4 +724,11 @@ body {
 }
 #nav {
   max-height:100%;
+}
+.profile {
+  height: auto;
+  max-width: 33%;
+  /*float: left;*/
+  margin-right: 15px;
+  border-radius: 33px 11px 33px 11px;
 }
