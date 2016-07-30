@@ -738,3 +738,7 @@ body {
 select:required {
     color: #878787;
 }
+.send-text {
+    color: white;
+    padding-bottom: 30px;
+}
