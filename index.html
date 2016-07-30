@@ -187,11 +187,14 @@
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="phone" placeholder="Phone">
                                 </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="zip" placeholder="ZIP code">
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select class="form-control" name="make">
-                                        <option >Please select your drone manufacturer</option>
+                                    <select class="form-control" name="make" required>
+                                        <option disabled selected>Please select your drone manufacturer</option>
                                         <option value="DJI">DJI</option>
                                         <option value="Yuneec">Yuneec</option>
                                         <option value="3DR">3DR</option>
