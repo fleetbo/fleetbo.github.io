@@ -732,3 +732,6 @@ body {
   margin-right: 15px;
   border-radius: 33px 11px 33px 11px;
 }
+#contactform {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
