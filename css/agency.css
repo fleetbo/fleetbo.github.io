@@ -1,3 +1,7 @@
+html:not(.navbar-brand#) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -95,10 +99,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
     color: #fff;
-    background-color: #0c9eef;
+    /*background-color: #0c9eef;*/
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*text-transform: uppercase;*/
-    font-weight: 700;
+    border-color: white;
     border-radius: 3px;
     font-size: 18px;
     padding: 20px 40px
@@ -108,8 +112,10 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #0a7ebe;
+    color: #0c9eef;
+    /*background-color: #0a7ebe;*/
+    border-color: #0c9eef;
+    border-radius: 3px;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -215,7 +221,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 header {
-    background-image: url(../img/header-bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(../img/header-bg.jpg);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -235,12 +241,11 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 25px
+    margin-bottom: 75px;
 }
 header .intro-text .intro-heading {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*text-transform: uppercase;*/
-    font-weight: 700;
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 25px
@@ -255,12 +260,11 @@ header .intro-text .intro-heading {
         font-style: italic;
         font-size: 40px;
         line-height: 40px;
-        margin-bottom: 25px
+        margin-bottom: 75px;
     }
     header .intro-text .intro-heading {
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
         /*text-transform: uppercase;*/
-        font-weight: 700;
         font-size: 75px;
         line-height: 75px;
         margin-bottom: 50px
