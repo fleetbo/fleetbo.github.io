@@ -99,11 +99,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
     color: #fff;
-    /*background-color: #0c9eef;*/
+    background-color: #0c9eef;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*text-transform: uppercase;*/
-    border-color: white;
-    border-radius: 3px;
     font-size: 18px;
     padding: 20px 40px;
 }
@@ -112,10 +109,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    color: #0c9eef;
-    /*background-color: #0a7ebe;*/
+    color: white;
     border-color: #0c9eef;
-    border-radius: 3px;
 }
 .btn-xl:active,
 .btn-xl.active,
