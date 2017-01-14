@@ -53,7 +53,7 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-shop navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -63,7 +63,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Fleetbo</a>
+                <a class="navbar-brand page-scroll" href="index.html#page-top">Fleetbo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,7 +76,7 @@
                         <a class="page-scroll" href="test.html">Shop</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Repair</a>
+                        <a class="page-scroll" href="index.html#pricing">Repair</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -88,86 +88,171 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">Fast, Affordable Drone Repair</div>
-                <div class="intro-lead-in">
-                    Our techs come to you!
-                </div>
-                <div class="intro-lead-in">
-                    Same-day service available in Los Angeles
-                </div>
-                <div class="intro-lead-in">
-                    DJI, Yuneec, 3DR, Parrot, and More
-                </div>
-                <a href="#contact" class="page-scroll btn btn-xl btn-intro">Repair My Drone</a>
-            </div>
-        </div>
-    </header>
-
     <!-- Pricing Section -->
-    <section id="pricing">
+    <section id="pricing" style="padding: 120px 0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Pricing</h2>
-                    <h3 class="section-subheading text-muted">
-                        Don't overpay at a hobby shop! Save up to 40% with Fleetbo
+                    <h2 class="section-heading">Minidrones</h2>
+                </div>
+                <div id='collection-component-ba86033e3fb'></div>
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading text-muted" style="margin-bottom: 0">
+                        Not looking to upgrade? Get a free repair quote
                     </h3>
                 </div>
-                <div class="col-md-4 text-center triptych">
-                    <h4 class="service-heading">Basic Repair</h4>
-                    <p class="text-muted ">
-                        SAME-DAY SERVICE
-                    </p>
-                    <p class="text-muted">
-                        Ideal for quick repairs including:<br>
-                        - Motor replacement<br>
-                        - ESC board replacement<br>
-                        - Firmware update
-                    </p>
-                    <p class="text-muted">
-                        Parts not included
-                    </p>
-                    <h4 class="service-price">$35 / repair</h4>
-                    <!-- <a href="#contact" class="page-scroll btn btn-primary" id="basic">Select</a> -->
-                </div>
-                <div class="col-md-4 text-center triptych">
-                    <h4 class="service-heading">Advanced Repair</h4>
-                    <p class="text-muted ">
-                        5-7 DAY REPAIR TIME
-                    </p>
-                    <p class="text-muted">
-                        Ideal for in-depth repairs including:<br>
-                        - Aircraft shell replacement<br>
-                        - Gimbal / camera replacement<br>
-                        - Internal board replacement
-                    </p>
-                    <p class="text-muted">
-                        Parts not included
-                    </p>
-                    <h4 class="service-price">$70 / hour</h4>
-                    <!-- <a href="#contact" class="page-scroll btn btn-primary" id="advanced">Select</a> -->
-                </div>
-                <div class="col-md-4 text-center triptych">
-                    <h4 class="service-heading">Fleetbo Care</h4>
-                    <p class="text-muted ">
-                        BEST VALUE
-                    </p>
-                    <p class="text-muted">
-                        Protection plan includes:<br>
-                        - 3 Basic Repairs<br>
-                        - 1 Advanced Repair<br>
-                        - No deductibles!
-                    </p>
-                    <p class="text-muted">
-                        Parts not included
-                    </p>
-                    <h4 class="service-price">$195 / year</h4>
-                    <!-- <a href="#contact" class="page-scroll btn btn-primary" id="fleetbo-care">Select</a> -->
-                </div>
+                <script type="text/javascript">
+                /*<![CDATA[*/
+
+                (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: 'fleetbo.myshopify.com',
+                      apiKey: 'd919cd54ddbef8eaa55ab312fc96993b',
+                      appId: '6',
+                    });
+
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent('collection', {
+                        id: 361526418,
+                        node: document.getElementById('collection-component-ba86033e3fb'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                  "product": {
+                    "variantId": "all",
+                    "contents": {
+                      "variantTitle": false,
+                      "description": false,
+                      "buttonWithQuantity": false,
+                      "quantity": false
+                    },
+                    "text": {
+                      "button": "Add to cart"
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "calc(25% - 20px)",
+                          "margin-left": "20px",
+                          "margin-bottom": "50px"
+                        }
+                      },
+                      "button": {
+                        "background-color": "#000000",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        ":focus": {
+                          "background-color": "#000000"
+                        }
+                      }
+                    }
+                  },
+                  "cart": {
+                    "contents": {
+                      "button": true
+                    },
+                    "text": {
+                      "button": "Checkout"
+                    },
+                    "styles": {
+                      "button": {
+                        "background-color": "#000000",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        ":focus": {
+                          "background-color": "#000000"
+                        }
+                      },
+                      "footer": {
+                        "background-color": "#ffffff"
+                      }
+                    }
+                  },
+                  "modalProduct": {
+                    "contents": {
+                      "variantTitle": false,
+                      "buttonWithQuantity": true,
+                      "button": false,
+                      "quantity": false
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "0px",
+                          "margin-bottom": "0px"
+                        }
+                      },
+                      "button": {
+                        "background-color": "#000000",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        ":focus": {
+                          "background-color": "#000000"
+                        }
+                      }
+                    }
+                  },
+                  "toggle": {
+                    "styles": {
+                      "toggle": {
+                        "background-color": "#000000",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        ":focus": {
+                          "background-color": "#000000"
+                        }
+                      },
+                      "count": {
+                        "color": "#ffffff",
+                        ":hover": {
+                          "color": "#ffffff"
+                        }
+                      },
+                      "iconPath": {
+                        "fill": "#ffffff"
+                      }
+                    }
+                  },
+                  "productSet": {
+                    "styles": {
+                      "products": {
+                        "@media (min-width: 601px)": {
+                          "margin-left": "-20px"
+                        }
+                      }
+                    }
+                  }
+                }
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+                </script>
             </div>
         </div>
     </section>

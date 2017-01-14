@@ -215,6 +215,82 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em
     }
 }
+.navbar-shop {
+    background-color: #222;
+    border-color: transparent
+}
+.navbar-shop .navbar-brand {
+    color: #fff;
+    font-family: "Qube", "Helvetica Neue", Helvetica, Arial, cursive
+}
+.navbar-shop .navbar-brand:hover,
+.navbar-shop .navbar-brand:focus,
+.navbar-shop .navbar-brand:active,
+.navbar-shop .navbar-brand.active {
+    color: #0c9eef
+}
+.navbar-shop .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+.navbar-shop .navbar-toggle {
+    background-color: #0c9eef;
+    border-color: #0c9eef
+}
+.navbar-shop .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+.navbar-shop .navbar-toggle:hover,
+.navbar-shop .navbar-toggle:focus {
+    background-color: #0c9eef
+}
+.navbar-shop .nav li a {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff
+}
+.navbar-shop .nav li a:hover,
+.navbar-shop .nav li a:focus {
+    color: #0c9eef;
+    outline: 0
+}
+.navbar-shop .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #0c9eef
+}
+.navbar-shop .navbar-nav>.active>a:hover,
+.navbar-shop .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #0c9eef
+}
+@media (min-width: 768px) {
+    .navbar-shop {
+        /*background-color: transparent;*/
+        padding: 10px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0
+    }
+    .navbar-shop .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+    .navbar-shop .navbar-nav>.active>a {
+        border-radius: 3px
+    }
+    .navbar-shop.navbar-shrink {
+        background-color: #222;
+        padding: 10px 0
+    }
+    .navbar-shop.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+}
 header {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(../img/header-bg.jpg);
     background-repeat: none;
